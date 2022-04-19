@@ -305,6 +305,7 @@ a{text-decoration: none;
     height: 500px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke;
+    text-align: center;
     font-size: larger;
     display: flex;
     flex-direction: column;
