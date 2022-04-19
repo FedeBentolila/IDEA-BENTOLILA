@@ -1,0 +1,901 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd"
+                         "logoynav    logoynav"
+                         "fondoindega fondoindega"
+                         "eyp         eyp"
+                         " tarjetas   tarjetas"
+                         "ubicacion   ubicacion"
+                         "mapa        mapa"
+                         "pie         pie";
+}
+
+
+.logoynav{
+    background-color: rgb(71, 74, 73);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.insideheader2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.indegalogo{
+    padding-right:30px;
+    padding-left: 30px;
+}
+
+.indegalogo:hover{
+    transform: rotateY(360deg);
+    transition: 5s;
+}
+
+
+.textoh2{
+    color: rgb(63, 63, 63);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+   
+}
+
+
+.listabarranav{
+    background-color: rgb(99, 205, 205);
+    display: flex;
+    justify-content: center;
+    width:auto;
+    font-size: 10px;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+
+}
+
+
+.listabarranav li{
+    padding: 10px; 
+}
+
+
+a:hover {
+    background-color: rgba(228, 241, 241, 0.735);
+    border-radius: 20px;
+}
+
+a{text-decoration: none;
+    color: white;   
+}
+
+.redesydireccion{
+    grid-area: ryd;
+    background-color: rgb(71, 74, 73);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.direccion{
+    color: white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.logoynav{
+    grid-area: logoynav;
+    background-color: whitesmoke;
+}
+
+.fondoindega{
+    grid-area: fondoindega;
+    background-image: url(./img/INDEGA\ IMAGEN\ GRANDE.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fondoindega p{
+    color: rgb(93, 93, 93);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 35px;
+    text-align: center;
+}
+
+.estudiosypatologias{
+    grid-area: eyp;
+    background-color: gray;
+}
+
+.mediotitulo{
+    background-color: gray;
+    color: whitesmoke;
+    font-size: medium;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.tarjetas{
+    grid-area: tarjetas;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.tarjetatarjetasindex{
+    background-color: gray;
+    margin: 20px;
+    width: 200px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetatarjetasindex h2{
+    background-color:rgb(99, 205, 205) ;
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 10px;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjetatarjetasindex img{
+    padding: 10px;
+}
+
+.tarjetatarjetasindex:hover{
+    transform: scale(1.5);
+    transition: 3s;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+    background-image: linear-gradient(to bottom,rgb(99, 205, 205),rgb(171, 218, 218) );
+    padding: 20px;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.pie{
+    grid-area: pie;
+    background-color: rgb(71, 74, 73);
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+    
+}
+
+.tarjetafooter{
+    padding: 40px;
+}
+
+
+.contenedorequipomedico{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd"
+                         "logoynav    logoynav"
+                         "fondoequipo fondoequipo"
+                         "tarjetasequipo   tarjetasequipo"
+                         "aside             aside"
+                         "pie         pie";
+}
+
+.tituloeimagenequipo{
+    grid-area: fondoequipo;
+    background-image: linear-gradient(to bottom,rgb(99, 205, 205),rgb(171, 218, 218) );
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarjetasequipo{
+    grid-area: tarjetasequipo;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.especialidadesaside{
+    grid-area: aside;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.especialidadesaside h3{
+    background-color:rgb(99, 205, 205);
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.especialidadesaside ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 200px;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.especialidadesaside ul li{
+    margin-top: 10px;
+}
+
+.contenedorespecialidades{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 30px auto auto;
+    grid-template-areas: "ryd         ryd"
+                         "logoynav    logoynav"
+                         "fondoespecialidades fondoespecialidades"
+                         "separador            separador"
+                         "listasesp   listasesp"
+                         "pie         pie";
+}
+
+.tituloeimagenespecialidades{
+    grid-area: fondoespecialidades;
+    background-image: linear-gradient(to bottom,rgb(99, 205, 205),rgb(171, 218, 218) );
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.separador{
+    grid-area: separador;
+    background-color: gray;
+}
+
+.listasespecialidades{
+    grid-area: listasesp;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listasespecialidades ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 200px;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contenedorestudios{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd"
+                         "logoynav    logoynav"
+                         "tituloestudios tituloestudios"
+                         "tarjetasestudio   tarjetasestudio"
+                         "listasestudios             listasestudios"
+                         "pie         pie";
+}
+
+.tituloprincipalesestudios{
+    grid-area: tituloestudios;
+    background-color: gray;
+    color: whitesmoke;
+    font-size: medium;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.tarjetasestudios{
+    grid-area: tarjetasestudio;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.tarjetaestudiostarjeta{
+    background-color: gray;
+    margin: 20px;
+    width: 200px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetaestudiostarjeta h2{
+    background-color:rgb(99, 205, 205) ;
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 10px;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjetaestudiostarjeta:hover{
+    transform: scale(1.5);
+    transition: 3s;
+}
+
+.tarjetaestudiostarjeta img{
+    padding: 10px;
+}
+
+.listasenestudios{
+    grid-area: listasestudios;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listasenestudios ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 200px;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contenedorcontactos{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd"
+                         "logoynav    logoynav"
+                         "fondoindega fondoindega"
+                         "formulario   formulario"
+                         "ubicacion   ubicacion"
+                         "mapa        mapa"
+                         "pie         pie";
+}
+
+.formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.formulario ul{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: left;
+    list-style: none;
+    background-color: gray;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.formulario ul li{
+    margin-top: 10px;
+}
+
+.formulario img{
+    padding: 20px;
+}
+
+
+
+/* ---------------------------WIDHT 1024*---------------------------------------------------*/
+
+
+@media (min-width:1024px) {
+
+    .contenedor{
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "ryd         ryd       ryd        ryd"
+                             "logoynav    logoynav  logoynav    logoynav"
+                             "fondoindega fondoindega   fondoindega   fondoindega"
+                             "eyp         eyp           eyp             eyp"
+                             " tarjetas   tarjetas      tarjetas        tarjetas"
+                             "ubicacion   ubicacion     ubicacion       ubicacion"
+                             "mapa        mapa          mapa            mapa"
+                             "pie         pie           pie             pie";
+    }
+
+    .logoynav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    
+    .insideheader2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .indegalogo{
+        padding-right:30px;
+        padding-left: 30px;
+    }
+    
+    
+    .textoh2{
+        color: rgb(63, 63, 63);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: large;
+       
+    }
+    
+    
+    .listabarranav{
+        display: flex;
+        justify-content: center;
+        width:auto;
+        font-size: 25px;
+    }
+    
+    
+    .listabarranav li{
+        padding: 10px; 
+    }
+    
+    
+    .redesydireccion{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .fondoindega{
+        grid-area: fondoindega;
+        background-image: url(./img/INDEGA\ IMAGEN\ GRANDE.jpg);
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .fondoindega p{
+        color: rgb(93, 93, 93);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 50px;
+        padding: 35px;
+        text-align: center;
+    }
+    
+    
+    .mediotitulo{
+        background-color: gray;
+        color: whitesmoke;
+        font-size: 25px;
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .tarjetas{
+        grid-area: tarjetas;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+    }
+    
+    .tarjetatarjetasindex{
+        background-color: gray;
+        margin: 20px;
+        width: 200px;
+        height:200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tarjetatarjetasindex h2{
+        background-color:rgb(99, 205, 205) ;
+        color: whitesmoke;
+        width: 100%;
+        border-radius: 10px;
+        font-size:15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .tarjetatarjetasindex img{
+        margin-top: 24px;
+    }
+    
+    .ubicacion{
+        grid-area: ubicacion;
+        background-color: rgb(99, 205, 205);
+        padding: 20px;
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .pie{
+        grid-area: pie;
+        background-color: rgb(71, 74, 73);
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        display: flex;
+        height: 500px;
+        text-align: left;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    
+    .tarjetafooter{
+
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    
+            
+.contenedorequipomedico{
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto  auto;
+    grid-template-areas: "ryd         ryd      ryd      ryd"
+                         "logoynav    logoynav  logoynav   logoynav"
+                         "fondoequipo fondoequipo   fondoequipo  fondoequipo"
+                         "tarjetasequipo   tarjetasequipo aside   aside"
+                         "pie         pie   pie    pie";
+}
+
+.tituloeimagenequipo{
+    grid-area: fondoequipo;
+    background-color: rgb(99, 205, 205);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloeimagenequipo img{
+    width: 800px;
+}
+
+.tarjetasequipo{
+    grid-area: tarjetasequipo;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.especialidadesaside{
+    grid-area: aside;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidadesaside h3{
+    background-color:rgb(99, 205, 205);
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.especialidadesaside ul{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.especialidadesaside ul li{
+    margin-top: 10px;
+}
+
+
+
+.contenedorespecialidades{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 30px auto auto;
+    grid-template-areas: "ryd         ryd       ryd      ryd"
+                         "logoynav    logoynav   logoynav    logoynav"
+                         "fondoespecialidades fondoespecialidades fondoespecialidades fondoespecialidades"
+                         "separador            separador separador   separador"
+                         "listasesp   listasesp  listasesp  listasesp"
+                         "pie         pie     pie     pie";
+}
+
+.tituloeimagenespecialidades{
+    grid-area: fondoespecialidades;
+    background-color:rgb(99, 205, 205);
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.separador{
+    grid-area: separador;
+    background-color: gray;
+}
+
+.listasespecialidades{
+    grid-area: listasesp;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listasespecialidades ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 300px;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.listasespecialidades ul li{
+    margin-top: 20px;
+}
+
+
+.contenedorestudios{
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd        ryd          ryd"
+                         "logoynav    logoynav   logoynav     logoynav"
+                         "tituloestudios tituloestudios  tituloestudios   tituloestudios"
+                         "tarjetasestudio   tarjetasestudio tarjetasestudio tarjetasestudio"
+                         "listasestudios    listasestudios   listasestudios  listasestudios"
+                         "pie         pie    pie    pie";
+}
+
+
+.tarjetasestudios{
+    grid-area: tarjetasestudio;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.tarjetaestudiostarjeta{
+    background-color: gray;
+    margin: 20px;
+    width: 200px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetaestudiostarjeta h2{
+    background-color:rgb(99, 205, 205) ;
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjetaestudiostarjeta img{
+    padding: 20px;
+    width: 180px;
+}
+
+.listasenestudios{
+    grid-area: listasestudios;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.listasenestudios ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 200px;
+    font-size: large;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contenedorcontactos{
+    display: grid;
+    background-color: whitesmoke;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "ryd         ryd    ryd    ryd"
+                         "logoynav    logoynav    logoynav   logoynav"
+                         "fondoindega fondoindega  fondoindega  fondoindega"
+                         "formulario   formulario   formulario  formulario"
+                         "ubicacion   ubicacion     ubicacion   ubicacion"
+                         "mapa        mapa          mapa        mapa"
+                         "pie         pie           pie         pie";
+}
+
+.formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.formulario ul{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: left;
+    list-style: none;
+    background-color: gray;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.formulario ul li{
+    margin-top: 10px;
+}
+
+.formulario img{
+    padding: 20px;
+}
+
+
+
+
+}
