@@ -36,11 +36,24 @@
 .indegalogo{
     padding-right:30px;
     padding-left: 30px;
+    animation-name: efecto_indegalogo;
+    animation-iteration-count: calc(3);
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 2s;
 }
 
 .indegalogo:hover{
     transform: rotateY(360deg);
     transition: 5s;
+}
+
+@keyframes efecto_indegalogo{
+0%{opacity:1;}
+25%{opacity:0;}
+50%{opacity:1;}
+75%{opacity:0;}
+100%{opacity:1;}
 }
 
 
@@ -169,7 +182,7 @@ a{text-decoration: none;
 }
 
 .tarjetatarjetasindex:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 3s;
 }
 
@@ -195,7 +208,7 @@ a{text-decoration: none;
 
 .pie{
     grid-area: pie;
-    background-color: rgb(71, 74, 73);
+    background-image: linear-gradient(to bottom, rgb(71, 74, 73), rgb(31, 32, 32));
     color: whitesmoke;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
@@ -399,7 +412,7 @@ a{text-decoration: none;
 }
 
 .tarjetaestudiostarjeta:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 3s;
 }
 
