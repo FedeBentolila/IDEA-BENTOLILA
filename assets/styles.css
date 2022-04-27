@@ -6,6 +6,7 @@
 .especialidadesaside{
     background-color: whitesmoke;
     width: 450px;
+    border-radius: 10px;
 }
 
 .especialidadesaside h3{
@@ -59,14 +60,14 @@ a{text-decoration: none;
 .listasespecialidadesBT{
     background-color: whitesmoke;
     margin-top: 50px;
+    
 }
 
 .listasespecialidadesBT ul{
     list-style: none;
-    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke;
-    height: auto;
+    height: 380px;
     width:auto;
     font-size: large;
     text-align: center;
@@ -74,6 +75,10 @@ a{text-decoration: none;
     padding: 20px;
     margin-top: 50px;
     border-radius: 10px;
+}
+
+.listasespecialidadesBT ul li{
+    margin-top: 10px;
 }
 
 
@@ -85,7 +90,7 @@ a{text-decoration: none;
 .formulario ul{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
-    text-align: left;
+    text-align: center;
     list-style: none;
     background-color: gray;
     color: whitesmoke;
@@ -174,6 +179,7 @@ a{text-decoration: none;
 
 .card{
     margin-top: 20px;
+    height: auto;
     background-color: gray;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
